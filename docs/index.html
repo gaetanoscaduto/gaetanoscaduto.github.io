@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teaching – Gaetano Scaduto</title>
+<title>Welcome! – Gaetano Scaduto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Things I wrote</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+    <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
@@ -127,23 +127,23 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Welcome!</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -157,49 +157,100 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
   body {
-  background-image: url("./backgrounds/background_ag1.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+    background-image: url("./backgrounds/background_ag1.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* intro callout */
+  .text-background {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+
+  /* make the cards transparent and slightly wider */
+  .grid > .card {
+    background-color: rgba(255, 255, 255, 0.6); /* transparency */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);    /* optional soft shadow */
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  /* widen the grid container itself */
+  .grid {
+    max-width: 1200px;     /* adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1.5rem;           /* spacing between cards */
+  }
+
+  /* responsive columns: 1 on phone, 2 on tablet, 3 on desktop */
+  @media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1025px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+  }
   
-.text-background {
-    background-color: rgba(256, 256, 256, 0.75); 
-    color: black; /* White text for contrast */
-    padding: 5px 10px; /* Padding around text */
-    display: inline-block; /* Ensures the background only takes up necessary space */
-}
+  /* Mobile fixes */
+  @media (max-width: 640px) {
+    /* Make the intro box use the full width on phones */
+    .text-background {
+      display: block;       /* was inline-block */
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 12px;   /* keep the nice padded look */
+    }
+
+    /* Let each column take the full width when stacked */
+    .columns > .column {
+      width: 100% !important;
+    }
+
+    /* Center and size the photo nicely on mobile */
+    .hero-photo {
+      display: block;
+      margin: 0.5rem auto 1rem;                 /* center */
+      width: clamp(220px, 70vw, 360px);         /* responsive width */
+      height: auto;
+    }
+  }
+
 </style>
 <div class="text-background">
-<p>Here you can find the teaching materials that I produced so far.</p>
-<ul>
-<li>A brief and smooth <a href="https://github.com/gaetanoscaduto/Laboratorio-R">Introduction to R</a> course (in Italian).</li>
-</ul>
-<!-- -->
-<ul>
-<li><p>In autumn 2023 I held two classes with students from the BA in Organization Sciences at the University of Milan-Bicocca.</p>
-<ul>
-<li><p>A practical introduction to the statistical software R for the analysis of electoral data.</p>
-<ul>
-<li>Teaching material is available <a href="https://github.com/gaetanoscaduto/teaching/tree/main/introduzioneR">here</a>.</li>
-</ul></li>
-<li><p>A class on the problems with collective decision-making: Condorcet’s paradox, strategic misreporting, and Arrow’s theorem.</p>
-<ul>
-<li>You can find the slides <a href="https://github.com/gaetanoscaduto/teaching/tree/main/CondorcetPP">here</a>.</li>
-</ul></li>
-</ul></li>
-<li><p>In spring 2023, I held two classes with students from the BA in Organization Sciences at the University of Milan-Bicocca.</p>
-<ul>
-<li><p>In one, I presented the research on <strong>political polarization</strong> and the state of the art regarding research on political inferences from apolitical cues.</p>
-<ul>
-<li>You can download the slides <a href="teaching_materials/Polarizzazione.pdf">here</a>.</li>
-</ul></li>
-<li><p>In the other, I presented the students an introduction to linear regression.</p>
-<ul>
-<li>You can download the material I produced (a medium-length document presenting the general topic) <a href="teaching_materials/Dispensa_regressione.pdf">here</a>.</li>
-</ul></li>
-</ul></li>
-</ul>
+<div class="columns">
+<div class="column" style="width:62%;">
+<div class="text-background">
+<p>Hi! My name is Gaetano Scaduto, I am 26 years old, I come from Agrigento, Sicily (see background!), and I live in Antwerp (Belgium).</p>
+<p>I am a postdoctoral researcher at the <a href="https://www.eur.nl/en/essb/research/erasmus-institute-culture-and-stratification/researchers">Erasmus Institute on Culture and Stratification</a>, part of the <a href="https://www.eur.nl/en/essb/about-essb/academic-teams/governance-and-pluralism">Governance and Pluralism</a> team at Erasmus University of Rotterdam. I work on the project “<a href="https://www.nwo.nl/en/projects/domyz32585">Understanding the different meanings of climate change among the public</a>”, a comparative, mixed-methods project aiming at understanding the different meanings attributed to climate change in the Netherlands and Italy.</p>
+<p>I consider my research interests broad and interdisciplinary, ranging from political sociology to social psychology and communications. In the past, I’ve worked on several topics, such as <a href="https://www.tandfonline.com/doi/abs/10.1080/13608746.2024.2411539">political stereotypes</a>, <a href="https://journals.sagepub.com/doi/10.1177/19401612251339107?int.sj-full-text.similar-articles.9">politicians’ communication online</a>, <a href="https://doi.org/10.1177/%2008944393251341201">privacy protection behavior online</a>, and <a href="https://www.rivisteweb.it/doi/10.%203270/115244">political talk show pundits in Italy</a>.</p>
+<p>On this website, you can find my CV, bio, publications, teaching materials, and some personal material I decide to share!</p>
+</div>
+</div><div class="column" style="width:38%;">
+<p><img src="images/WhatsApp Image 2025-10-16 at 16.40.45.jpeg" class="hero-photo img-fluid" width="340"></p>
+</div>
+</div>
+</div>
+<div class="grid">
+<section id="read-my-work" class="level4 card">
+<h4 class="anchored" data-anchor-id="read-my-work"><a href="./publications.html"><strong>Read my work</strong></a></h4>
+<p>Browse publications, slides, and preprints.</p>
+</section>
+<section id="check-my-cv" class="level4 card">
+<h4 class="anchored" data-anchor-id="check-my-cv"><a href="./cv.html"><strong>Check My CV</strong></a></h4>
+<p>Latest academic and industry CVs.</p>
+</section>
+<section id="contact" class="level4 card">
+<h4 class="anchored" data-anchor-id="contact"><a href="./contacts.html"><strong>Contact</strong></a></h4>
+<p>Reach out!</p>
+</section>
 </div>
 
 
@@ -295,7 +346,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/gaetanoscaduto\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
