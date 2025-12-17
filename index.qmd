@@ -116,3 +116,6 @@ Latest academic and industry CVs.
 Reach out!
 :::
 ::::::
+
+quarto::quarto_render('index.qmd', output_file = paste0(getwd(), "/index.html"))
+
