@@ -21,11 +21,7 @@ website:
         href: https://www.linkedin.com/in/gaetano-scaduto-92b6981ba/
       - icon: scholar
         href: https://scholar.google.com/citations?user=CjeVWvQAAAAJ&hl=it&oi=ao
-      
-        
  
-      
-
 format:
   html:
     theme: cosmo
