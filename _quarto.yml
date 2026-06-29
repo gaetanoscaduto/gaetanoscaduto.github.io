@@ -1,10 +1,8 @@
 project:
   type: website
-  output-dir: docs
-  
+
 website:
   title: "Gaetano Scaduto"
-  site-url: "https://gaetanoscaduto.github.io/"
   navbar:
     left:
       - href: index.qmd
@@ -35,6 +33,9 @@ format:
     toc: true
 
 editor: visual
+
+execute:
+  freeze: auto
 
 
 
