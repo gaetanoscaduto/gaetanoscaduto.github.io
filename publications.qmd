@@ -20,6 +20,7 @@ title: "Things I wrote"
 </style>
 ```
 
+
 ::: text-background
 Here you can find the list of the papers I worked on, organized by topic rather than chronological order. If you need further info, just reach out and I'll be happy to share more!
 

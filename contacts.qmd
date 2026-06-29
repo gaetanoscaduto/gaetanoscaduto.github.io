@@ -22,13 +22,10 @@ title: "Contacts"
 ::: text-background
 Here are my contacts:
 
--   Write me an email at **scaduto\@essb.eur.nl**
+-   Write me an email at **g.scaduto\@tilburguniversity.edu**
 
 -   [Linkedin](https://www.linkedin.com/in/gaetano-scaduto-92b6981ba/).
 
--   [Bluesky](https://bsky.app/profile/gaetanoscaduto.bsky.social)
-
--   [ResearchGate](https://www.researchgate.net/profile/Gaetano-Scaduto).
-
 -   [GitHub](https://github.com/gaetanoscaduto).
 :::
+

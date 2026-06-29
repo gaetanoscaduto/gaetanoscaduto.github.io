@@ -40,6 +40,7 @@ resources:
 </style>
 ```
 
+
 Here you can find the copies and previews of my CVs
 
 <p><i class="fas fa-download pr-1 fa-fw"></i><a href="academic_cv.pdf" target="_blank" rel="noopener"> Click here to download my Academic CV</a>.</p>
@@ -53,27 +54,5 @@ Here you can find the copies and previews of my CVs
 :::
 
 ::: cv-preview-wrap
-<iframe class="cv-frame" src="academic_cv.pdf#view=FitH" title="Academic CV preview" loading="lazy">
-
-</iframe>
-:::
-
-::: text-background
-<strong>Preview: Industry CV (last update, Spring 2025)</strong>
-:::
-
-::: cv-preview-wrap
-<iframe class="cv-frame" src="industry_cv.pdf#view=FitH" title="Industry CV preview" loading="lazy">
-
-</iframe>
-:::
-
-::: text-background
-<strong>Preview: Europass CV (last update, Spring 2025)</strong>
-:::
-
-::: cv-preview-wrap
-<iframe class="cv-frame" src="europass_cv.pdf#view=FitH" title="Europass CV preview" loading="lazy">
-
-</iframe>
+<iframe class="cv-frame" src="academic_cv.pdf#view=FitH" title="Academic CV preview" loading="lazy"></iframe>
 :::
